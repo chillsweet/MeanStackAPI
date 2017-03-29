@@ -1,0 +1,27 @@
+tml
+	head
+		title= title
+		link(href='/css/main.css', rel='stylesheet')
+	body
+		each msg in massages
+			div.flash = msg
+		form(name='signup' ,method="post" ,action="/signup")
+			div
+				label(for="username") Username
+				input(type="text" , name="username" ,placeholder="username")
+			div
+				label(for="firstname") Firstname
+				input(type="text", name="firstname",placeholder='Firstname')
+			div
+				label(for="lastname") Lastname
+				input(type="text", name="lastname", placeholder="Lastname")
+			div
+				label(for="password") Password
+				input(type="password", name="password", placeholder="Password")
+			div
+				label(for="email") Email
+				input(type="email", name="email", placeholder="Email")
+			div
+				input(type="submit", value="Sign Up")
+		a(href='/oauth/facebook') Login with Facebook
+		a(href='/oauth/google') Login with Google

@@ -1,0 +1,49 @@
+html
+	head
+		title= title
+		link(href='/css/main.css', rel='stylesheet')
+		link(href='/lib/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+		link(href='/lib/bootstrap/dist/css/bootstrap-theme.min.css', rel='stylesheet')
+		link(href='/lib/bootstrap/dist/css/bootstrap.css', rel='stylesheet')
+		link(href='/lib/bootstrap/docs/assets/css/docs.min.css', rel='stylesheet')
+		link(href='/lib/bootstrap/docs/assets/css/src/docs.css', rel='stylesheet')
+		link(href='/lib/bootstrap/docs/assets/css/src/pygments-manni.css', rel='stylesheet')
+		link(href='/lib/bootstrap/docs/assets/css/ie10-viewport-bug-workaround.css', rel='stylesheet')
+		link(href='/lib/bootstrap/docs/assets/css/src/pygments-manni.css', rel='stylesheet')
+		link(href='/css/main.css', rel='stylesheet')
+	body
+		each msg in massages
+			div.flash = msg
+		form(name='login', class="form-inline",method='post', action='login')
+			div(class="form-group")
+				fieldset(class="form-group")
+					label(for='username') Username:
+					input(type='text', name='username', class="form-control",placeholder='Username')
+			div(class="form-group")
+				fieldset(class="form-group")
+					label(for='password') Password:
+					input(type='password', name="password", class="form-control",placeholder="Password")
+			div(class="form-group")
+				fieldset(class="form-group")
+					input(type='submit', value="Log in", class="btn btn-primary")
+					
+		a(href='/oauth/facebook') Login with Facebook
+		a(href='/oauth/google') Login with Google
+
+
+		script(type="text/javascript", src="/lib/bootstrap/docs/assets/js/customize.min.js")
+		script(type="text/javascript", src="/lib/bootstrap/docs/assets/js/docs.min.js")
+		script(type="text/javascript", src="/lib/bootstrap/docs/assets/js/ie-emulation-modes-warning.js")
+		script(type="text/javascript", src="/lib/bootstrap/docs/assets/js/ie8-responsive-file-warning.js")
+		script(type="text/javascript", src="/lib/bootstrap/docs/assets/js/ie10-viewport-bug-workaround.js")
+		script(type="text/javascript", src="/lib/bootstrap/docs/assets/js/src/application.js")
+		script(type="text/javascript", src="/lib/bootstrap/docs/assets/js/src/customizer.js")
+		script(type="text/javascript", src="/lib/bootstrap/docs/assets/js/raw-files.min.js")
+		script(type="text/javascript", src="/lib/bootstrap/docs/assets/js/vendor/anchor.js")
+		script(type="text/javascript", src="/lib/bootstrap/docs/assets/js/vendor/autoprefixer.js")
+		script(type="text/javascript", src="/lib/bootstrap/docs/assets/js/vendor/Blob.js")
+		script(type="text/javascript", src="/lib/bootstrap/docs/assets/js/vendor/FileSaver.js")
+			
+		script(type="text/javascript", src="/lib/bootstrap/dist/js/bootstrap.min.js")
+		script(type="text/javascript", src="/lib/angular/angular.min.js")
+		script(type="text/javascript", src="/application.js")

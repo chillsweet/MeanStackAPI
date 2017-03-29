@@ -1,0 +1,23 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "witme for test knomlead",
+  "main": "server.js",
+  "scripts": {
+    "test": "node"
+  },
+  "author": "Subaru",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "busboy-body-parser": "0.0.10",
+    "cloud-env": "~0.2.1",
+    "compression": "^1.6.2",
+    "express": "^4.15.2",
+    "gridfs-stream": "^1.1.1",
+    "jade": "file:node_modules/jade",
+    "mongoose": "^4.9.2",
+    "morgan": "^1.8.1",
+    "view-helpers": "^0.1.5"
+  }
+}
